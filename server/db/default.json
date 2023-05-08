@@ -1,0 +1,80 @@
+{
+  "developer": [
+    {
+      "developerName": "name.a",
+      "components":[
+        {
+          "componentName": "@cm/mini-cli",
+          "componentDesc": "快速搭建前端项目的脚手架工具",
+          "componentstatus": "done",
+          "componentDocument": "https://github.com/chenlogin/custom-cli"
+        }
+      ]
+    },
+    {
+      "developerName": "name.b",
+      "components":[
+        {
+          "componentName": "组件A",
+          "componentDesc": "组件A描述",
+          "componentstatus": "done",
+          "componentDocument": ""
+        },
+        {
+          "componentName": "Layout",
+          "componentDesc": "通过基础的 24 分栏，迅速简便地创建布局",
+          "componentstatus": "doing",
+          "componentDocument": ""
+        }
+      ]
+    },
+    {
+      "developerName": "name.c",
+      "components":[
+        {
+          "componentName": "组件B",
+          "componentDesc": "组件B描述",
+          "componentstatus": "done",
+          "componentDocument": ""
+        },
+        {
+          "componentName": "组件C",
+          "componentDesc": "组件C描述",
+          "componentstatus": "done",
+          "componentDocument": ""
+        }
+      ]
+    },
+    {
+      "developerName": "name.d",
+      "components":[
+        {
+          "componentName": "组件D",
+          "componentDesc": "组件D描述",
+          "componentstatus": "done",
+          "componentDocument": ""
+        }
+      ]
+    }
+  ],
+  "todoList": [
+    {
+      "componentName": "Container",
+      "componentDesc": "用于布局的容器组件，方便快速搭建页面的基本结构",
+      "componentstatus": "todo",
+      "developerName": "-"
+    },
+    {
+      "componentName": "Layout",
+      "componentDesc": "通过基础的 24 分栏，迅速简便地创建布局",
+      "componentstatus": "doing",
+      "developerName": "name.b"
+    },
+    {
+      "componentName": "阿里云上传",
+      "componentDesc": "阿里云上传",
+      "componentstatus": "todo",
+      "developerName": "-"
+    }
+  ]
+}

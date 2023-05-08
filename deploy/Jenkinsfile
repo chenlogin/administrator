@@ -1,0 +1,47 @@
+pipeline {
+  tools { nodejs 'nodejs 16.4.0' }
+  agent any
+  stages {
+    stage('prepare') {
+      steps {
+        sh 'printenv'
+      }
+    }
+    stage('Install') {
+      steps {
+        sh 'node -v'
+        sh 'yarn -v'
+        sh 'yarn install --pure-lockfile'
+      }
+    }
+    // stage('Lint') {
+    //     steps {
+    //         echo 'lint'
+    //         // sh 'npm run lint'
+    //     }
+    // }
+    // stage('Test') {
+    //     steps {
+    //         // 可以执行一些单元测试、自动化测试任务等
+    //         echo 'test'
+    //     }
+    // }
+    stage('Build') {
+      steps {
+        sh 'yarn build'
+      }
+    }
+    stage('Deploy') {
+      steps {
+        echo 'deploy'
+        sh 'cp -rf ./dist/. /data/workspace/www/saasmanager.net'
+        sh 'cp -rf ./server /data/workspace/www/saasmanager.net'
+      }
+    }
+  }
+  post {
+    always {
+        deleteDir()
+    }
+  }
+}
