@@ -23,4 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 
+# 初始使用default.json数据复制到db.json，本地不提交以免污染线上数据
 server/db/db.json
